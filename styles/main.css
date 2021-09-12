@@ -3,20 +3,30 @@ body {
   margin: 0;
   font-family: Poppins, sans-serif;
 }
-/* Default button styling*/
-.blue-button-outlined {
+/* Default button types*/
+.transparent-button-white-outline {
   background-color: transparent;
   border: 3px solid #fff;
   color: #fff;
   font-weight: bold;
 }
-.blue-button-outlined:hover {
+.transparent-button-white-outline:hover {
   background-color: #fff;
   border: 3px solid #fff;
   color: #2e71be;
   cursor: pointer;
 }
-
+.blue-button {
+  background-color: #2e71be;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.blue-button:hover {
+  background-color: #fff;
+  color: #2e71be;
+  cursor: pointer;
+}
 /*Landing page top contact banner*/
 .lp-top-contact {
   height: 16.5rem;
@@ -45,6 +55,7 @@ body {
   text-align: left;
   font-weight: bold;
   font-size: 2.8rem;
+  line-height: 2.8rem;
   margin: 0;
 }
 .lp-top-contact > div > p {
@@ -67,6 +78,68 @@ body {
 }
 .lp-top-contact > .buttons-container > button > p {
   text-align: center;
+}
+
+/* Landing Page services*/
+.lp-services {
+  width: 100%;
+  height: 27.25rem;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lp-services > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.lp-services > div > div {
+  height: 22rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.lp-services > div > div > img {
+  border-radius: 50%;
+}
+.lp-services > div > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lp-services > div > div > div > span {
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e71be;
+  letter-spacing: 0.88px;
+}
+.lp-services-item-precka {
+  height: 0.5rem;
+  background-color: #2e71be;
+  width: 7.25rem;
+  align-self: center;
+  margin-top: 0.5rem;
+}
+.lp-services > div > div > div > p {
+  text-align: center;
+}
+.lp-services > .blue-button {
+  width: 14rem;
+  height: 3.25rem;
+  align-self: center;
+  margin: 0;
+  justify-self: flex-end;
+  margin-bottom: -1.6125rem;
+  font-size: 1.5rem;
+}
+.lp-services > .blue-button > p {
+  margin: 0;
 }
 
 /* Landing Page Bottom Contact Banner*/
