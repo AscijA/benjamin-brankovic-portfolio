@@ -1,0 +1,91 @@
+body {
+ background-image: url(../assets/images/background-image.jpg);
+}
+
+.all {
+    display: flex;
+}
+
+.contact{
+    display: flex;
+    margin: 8rem 15rem 4rem 15rem;
+    
+}
+
+.contactl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+.contactr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2e71be;
+    color: white;
+}
+
+.contactr-content{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.contactl-content {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.contactheader {
+    flex-basis: 20rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.polje{
+    flex-basis: 50rem;
+    margin-left: 5rem;
+}
+
+div > input {
+    height: 2rem;
+    width: 22rem;
+}
+
+div > textarea {
+    margin: 2rem 5rem;
+    width: 44.6rem;
+    height: 12rem;
+}
+
+.send-button {
+    margin-top: 2rem;
+    height: 3rem;
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: #2e71be;
+    border: none;
+    color: white;
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+.contactr-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.cicon{
+    width: 1rem;
+    color: white;
+    margin-right: 2rem;
+}
+
+.contactinfo{
+    display: flex;
+}
+
+.contactinfo > p{
+    margin: 0.5rem;
+}
