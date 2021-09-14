@@ -18,7 +18,7 @@
     <nav class="navbar">
         <img src="./assets/images/benjamin-logo.png" alt="Creative logo" />
         <ul>
-          <li>START</li>
+          <li><a href="./main.html">START</a></li>
           <li>ÜBER MICH</li>
           <li>PORTFOLIO</li>
           <li>DIENSTLEISTUNGEN</li>
@@ -30,16 +30,19 @@
         <div class="contactl">
             <div class="contactl-content">
               <h2 class="contactheader">Kontaktieren Sie mich</h2>
-              <div class="polje">
-                  <input type="text" name="name" placeholder="Name">
-                  <input type="text" name="name" placeholder="E-Mail">
+              <form action="">
+                <div class="polje">
+                  <input type="text" name="name" placeholder="Name*" class="inputb" maxlength="20" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" required>
+                  <input type="email" name="name" placeholder="E-Mail*" class="inputb" maxlength="20" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" required>
               </div>
               <div>
-                  <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" placeholder="Text*" required></textarea>
+                <textarea class="inputb" id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" placeholder="Text*" maxlenght="200" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" required></textarea>
               </div>
+                <p>Die mit * markierten Felder sind notwendig</p>
               <div>
-                  <button class="send-button">SCHICKEN</button>
+                  <button class="send-button" type="submit">SCHICKEN</button>
               </div>
+              </form>
             </div>
         </div>
         
