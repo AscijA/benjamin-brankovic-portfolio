@@ -22,7 +22,7 @@
 }
 
 .navbar > img {
-  height: 18rem;
+  height: 8rem;
 }
 
 /* Footer styling*/
@@ -41,7 +41,7 @@ footer {
 }
 
 .logo > img {
-  height: 5rem;
+  height: 3rem;
   justify-self: center;
 }
 
