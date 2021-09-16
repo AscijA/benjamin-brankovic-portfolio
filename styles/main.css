@@ -1,31 +1,11 @@
-html,
-body {
-  margin: 0;
-  font-family: Poppins, sans-serif;
-}
-/* Default button types*/
-.transparent-button-white-outline {
-  background-color: transparent;
-  border: 3px solid #fff;
-  color: #fff;
-  font-weight: bold;
-}
-.transparent-button-white-outline:hover {
-  background-color: #fff;
-  border: 3px solid #fff;
-  color: #2e71be;
-  cursor: pointer;
-}
-.blue-button {
-  background-color: #2e71be;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-}
-.blue-button:hover {
-  background-color: #fff;
-  color: #2e71be;
-  cursor: pointer;
+
+/* Landing Page Landing Screen*/
+.lp-landing-screen > div {
+  background-image: url(../assets/images/bg1.png);
+  filter: brightness(75%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 67.5rem;
 }
 /*Landing page top contact banner*/
 .lp-top-contact {
@@ -142,6 +122,100 @@ body {
   margin: 0;
 }
 
+/* Landing Page about me*/
+
+.lp-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lp-about-me > div {
+  width: 80%;
+  display: flex;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.lp-about-me > div > div {
+  margin-left: 11.5rem;
+}
+.lp-about-me > div > div > p {
+  
+  color: #545454;
+  letter-spacing: 0.49px;
+  margin: 0;
+}
+.lp-about-me > div > img {
+  box-shadow: -1rem -1rem #2e71be;
+}
+.lp-about-me-circle {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #2e71be;
+  border-radius: 50%;
+}
+.nezz-sta-ide-ovdje {
+  margin-top: 1rem;
+}
+.nezz-sta-ide-ovdje > div {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.nezz-sta-ide-ovdje > div > span {
+  margin-left: 1rem;
+}
+.lp-about-me button {
+  height: 3rem;
+  width: 15rem;
+  margin-top: 2rem;
+}
+
+/*Landing Page Projects*/
+.lp-projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lp-projects-tabs {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.lp-projects-tab {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style the buttons that are used to open the tab content */
+.lp-projects-tab button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 2.5rem;
+  min-width: 6rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: #545454;
+}
+
+/* Create an active/current tablink class */
+.lp-projects-tab button.active,
+.lp-projects-tab button:hover {
+  color: #fff;
+  background-color: #2e71be;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 /* Landing Page Bottom Contact Banner*/
 .lp-bottom-contact {
   width: 100%;

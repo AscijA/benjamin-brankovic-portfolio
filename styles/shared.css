@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+/* Default button types*/
+.transparent-button-white-outline {
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: bold;
+}
+.transparent-button-white-outline:hover {
+  background-color: #fff;
+  border: 3px solid #fff;
+  color: #2e71be;
+  cursor: pointer;
+}
+.blue-button {
+  background-color: #2e71be;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.blue-button:hover {
+  background-color: #fff;
+  color: #2e71be;
+  cursor: pointer;
+  border: #2e71be 3px solid;
+}
+
+button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title{
+   letter-spacing: 1.4px;
+  color: #2e71be;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
