@@ -1,0 +1,145 @@
+
+/* STANDARD CSS*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* --- */
+
+body {
+ background-image: url(../assets/images/background-image.jpg);
+}
+
+.all {
+    display: flex;
+}
+
+.contact{
+    display: flex;
+    margin: 8rem 17rem 5rem 17rem; 
+}
+
+.contactl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    flex-basis: 130rem;
+}
+
+.contactr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2e71be;
+    color: white;
+}
+
+.contactr-content{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.contactl-content {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+}
+
+.contactheader {
+    flex-basis: 20rem;
+    margin-bottom: 5rem;
+    color: #444444;
+}
+
+.polje{
+    display: flex;
+    flex-basis: 50rem;
+    margin-right: 5rem;
+    justify-content: space-between;
+}
+
+div > input {
+    height: 2rem;
+    width: 22rem;
+}
+
+div > textarea {
+    margin: 2rem 5rem 0 0;
+    width: 44.6rem;
+    height: 12rem;
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    max-width: 45rem;
+    min-width: 45rem;
+    max-height: 17rem;
+    min-height: 10rem;
+}
+
+.send-button {
+    margin-top: 2rem;
+    height: 3rem;
+    padding: 1rem;
+    background-color: #2e71be;
+    border: none;
+    color: white;
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+.send-button:hover{
+    cursor: pointer;
+}
+
+.contactr-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.cicon{
+    width: 1rem;
+    color: white;
+    margin-right: 2rem;
+}
+
+.contactinfo{
+    display: flex;
+}
+
+.contactinfo > p{
+    margin: 0.5rem;
+}
+
+.inputb {
+    border: none;
+    border-bottom: solid 2px #444444;
+}
+
+.polje > .inputb {
+    max-width: 20rem;
+    font-size: 1.3rem;
+}
+
+.inputb:focus {
+    border-bottom: solid 2px #2E71BE;
+    outline: none;
+}
+
+.inputb:hover{
+    border-bottom: solid 2px #2E71BE;
+    transition: all 0.5s ease;
+}
+
+
+::placeholder{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactl-content > p{
+    font-size: 0.8rem;
+    color: #6d6d6d;
+}
