@@ -5,6 +5,7 @@
   z-index: 1;
   background-color: #464646;
   opacity: 50%;
+  top: 0;
 }
 .navbar > div {
   margin-top: 2rem;

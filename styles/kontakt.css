@@ -9,11 +9,12 @@ a{
 /* --- */
 
 body {
- background-image: url(../assets/images/background-image.jpg);
+ background-image: url(../assets/images/bg3.png);
 }
 
 .all {
     display: flex;
+    margin-top: 8rem;
 }
 
 .contact{

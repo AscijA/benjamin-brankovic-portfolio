@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/shared.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/nav-footer.css" />
-    <link rel="stylesheet" href="./styles/kontakt.css">
+    <link rel="stylesheet" href="./styles/kontakt.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Kontakt | Benjamin Brankovic</title>
-</head>
-<body>
-
-    <nav class="navbar">
+  </head>
+  <body>
+   <nav class="navbar">
       <div>
         <img src="./assets/images/benjamin-logo.png" alt="Creative logo" />
         <ul>
@@ -27,57 +35,88 @@
         </ul>
       </div>
     </nav>
-  <div class="all">
-    <div class="contact">
+    <div class="all">
+      <div class="contact">
         <div class="contactl">
-            <div class="contactl-content">
-              <h2 class="contactheader">Kontaktieren Sie mich</h2>
-              <form action="">
-                <div class="polje">
-                  <input type="text" name="name" placeholder="Name*" class="inputb" maxlength="20" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" required>
-                  <input type="email" name="name" placeholder="E-Mail*" class="inputb" maxlength="20" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" required>
+          <div class="contactl-content">
+            <h2 class="contactheader">Kontaktieren Sie mich</h2>
+            <form action="">
+              <div class="polje">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name*"
+                  class="inputb"
+                  maxlength="20"
+                  oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
+                  required
+                />
+                <input
+                  type="email"
+                  name="name"
+                  placeholder="E-Mail*"
+                  class="inputb"
+                  maxlength="20"
+                  oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
+                  required
+                />
               </div>
               <div>
-                <textarea class="inputb" id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" placeholder="Text*" maxlenght="200" oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')" required></textarea>
+                <textarea
+                  class="inputb"
+                  id="Message"
+                  name="Message"
+                  class="fcf-form-control"
+                  rows="6"
+                  maxlength="3000"
+                  placeholder="Text*"
+                  maxlenght="200"
+                  oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
+                  required
+                ></textarea>
               </div>
-                <p>Die mit * markierten Felder sind notwendig</p>
+              <p>Die mit * markierten Felder sind notwendig</p>
               <div>
-                  <button class="send-button" type="submit">SCHICKEN</button>
+                <button class="send-button" type="submit">SCHICKEN</button>
               </div>
-              </form>
-            </div>
+            </form>
+          </div>
         </div>
-        
-        <div class="contactr">
-            <div class="contactr-content">
-                <h2>Kontakt Informationen</h2>
-                <p>Lorem, ipsum dolor sit amet consectetu alias voluptatum, temporibus asperiores beatae debitis voluptatem corporis ab nostrum.</p>
-                <div class="contactinfo">
-                    <img class="cicon" src="./assets/icons/map-locator.svg" alt="">
-                    <p>In Graz</p>
-                </div>
-                <div class="contactinfo">
-                    <img src="./assets/icons/phone-call.svg" alt="" class="cicon">
-                    <p>+43 666 666</p>
-                </div>
-                <div class="contactinfo">
-                    <img src="./assets/icons/email.svg" alt="" class="cicon">
-                    <p>benjo@njobe.bjj</p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
 
-  <footer>
-    <div class="social-links-container">
-      <img src="./assets/icons/linkedin.png" alt="LinkedIn" />
-      <img src="./assets/icons/facebook.png" alt="Facebook" />
-      <img src="./assets/icons/instagram.png" alt="Instagram" />
+        <div class="contactr">
+          <div class="contactr-content">
+            <h2>Kontakt Informationen</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetu alias voluptatum,
+              temporibus asperiores beatae debitis voluptatem corporis ab
+              nostrum.
+            </p>
+            <div class="contactinfo">
+              <img class="cicon" src="./assets/icons/map-locator.svg" alt="" />
+              <p>In Graz</p>
+            </div>
+            <div class="contactinfo">
+              <img src="./assets/icons/phone-call.svg" alt="" class="cicon" />
+              <p>+43 666 666</p>
+            </div>
+            <div class="contactinfo">
+              <img src="./assets/icons/email.svg" alt="" class="cicon" />
+              <p>benjo@njobe.bjj</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="logo">
-      <img src="./assets/images/benjamin-logo.png" alt="Creative logo" />
-    </div>
-  </footer>
-</body>
+
+    <footer>
+      <div class="social-links-container">
+        <img src="./assets/icons/linkedin.png" alt="LinkedIn" />
+        <img src="./assets/icons/facebook.png" alt="Facebook" />
+        <img src="./assets/icons/instagram.png" alt="Instagram" />
+      </div>
+      <div class="logo">
+        <img src="./assets/images/benjamin-logo.png" alt="Creative logo" />
+      </div>
+    </footer>
+  </body>
 </html>
