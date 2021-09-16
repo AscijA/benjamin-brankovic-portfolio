@@ -1,7 +1,7 @@
 
 /* Landing Page Landing Screen*/
 .lp-landing-screen > div {
-  background-image: url(../assets/images/bg1.png);
+  background-image: url(../assets/images/bg1-right-size.png);
   filter: brightness(75%);
   background-size: cover;
   background-repeat: no-repeat;
