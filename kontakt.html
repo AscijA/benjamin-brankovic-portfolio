@@ -23,92 +23,109 @@
   </head>
   <body>
     <nav class="navbar">
-      <div>
-        <img src="./assets/images/benjamin-logo.png" alt="Creative logo" />
+      <div class="navbar-items">
+        <img
+          src="./assets/images/logos/benjamin-logo.png"
+          alt="Creative logo"
+          id="navbar-logo"
+        />
         <ul>
-          <li><a href="./landing-page.html" class="navbar-inactive">START</a></li>
+          <li>
+            <a href="./landing-page.html" class="navbar-inactive">START</a>
+          </li>
           <li><a href="./about.html" class="navbar-inactive">ÜBER MICH</a></li>
-          <li><a href="./portfolio.html" class="navbar-inactive">PORTFOLIO</a></li>
-          <li><a href="./services.html" class="navbar-inactive">DIENSTLEISTUNGEN</a></li>
+          <li>
+            <a href="./portfolio.html" class="navbar-inactive">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="./services.html" class="navbar-inactive"
+              >DIENSTLEISTUNGEN</a
+            >
+          </li>
           <li><a href="./kontakt.html" class="navbar-inactive">KONTAKT</a></li>
         </ul>
       </div>
     </nav>
     <script src="./scripts/navbar-styling.js"></script>
-
-    <div class="all">
-      <div class="contact">
-        <div class="contactl">
-          <div class="contactl-content">
-            <h2 class="contactheader">Kontaktieren Sie mich</h2>
-            <form action="">
-              <div class="polje">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name*"
-                  class="inputb"
-                  maxlength="20"
-                  oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
-                  required
-                />
-                <input
-                  type="email"
-                  name="name"
-                  placeholder="E-Mail*"
-                  class="inputb"
-                  maxlength="20"
-                  oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
-                  required
-                />
-              </div>
-              <div>
-                <textarea
-                  class="inputb"
-                  id="Message"
-                  name="Message"
-                  class="fcf-form-control"
-                  rows="6"
-                  maxlength="3000"
-                  placeholder="Text*"
-                  maxlenght="200"
-                  oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
-                  required
-                ></textarea>
-              </div>
-              <p>Die mit * markierten Felder sind notwendig</p>
-              <div>
-                <button class="send-button" type="submit">SCHICKEN</button>
-              </div>
-            </form>
+    <section class="contact-section">
+      <div class="bg-image-blur"></div>
+      <div class="all">
+        <div class="contact">
+          <div class="contactl">
+            <div class="contactl-content">
+              <h2 class="contactheader">Kontaktieren Sie mich</h2>
+              <form action="">
+                <div class="polje">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name*"
+                    class="inputb"
+                    maxlength="20"
+                    oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="name"
+                    placeholder="E-Mail*"
+                    class="inputb"
+                    maxlength="20"
+                    oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea
+                    class="inputb"
+                    id="Message"
+                    name="Message"
+                    class="fcf-form-control"
+                    rows="6"
+                    maxlength="3000"
+                    placeholder="Text*"
+                    maxlenght="200"
+                    oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
+                    required
+                  ></textarea>
+                </div>
+                <p>Die mit * markierten Felder sind notwendig</p>
+                <div>
+                  <button class="send-button" type="submit">SCHICKEN</button>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
 
-        <div class="contactr">
-          <div class="contactr-content">
-            <h2>Kontakt Informationen</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetu alias voluptatum,
-              temporibus asperiores beatae debitis voluptatem corporis ab
-              nostrum.
-            </p>
-            <div class="contactinfo">
-              <img class="cicon" src="./assets/icons/map-locator.svg" alt="" />
-              <p>In Graz</p>
-            </div>
-            <div class="contactinfo">
-              <img src="./assets/icons/phone-call.svg" alt="" class="cicon" />
-              <p>+43 666 666</p>
-            </div>
-            <div class="contactinfo">
-              <img src="./assets/icons/email.svg" alt="" class="cicon" />
-              <p>benjo@njobe.bjj</p>
+          <div class="contactr">
+            <div class="contactr-content">
+              <h2>Kontakt Informationen</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetu alias voluptatum,
+                temporibus asperiores beatae debitis voluptatem corporis ab
+                nostrum.
+              </p>
+              <div class="contactinfo">
+                <img
+                  class="cicon"
+                  src="./assets/icons/map-locator.svg"
+                  alt=""
+                />
+                <p>In Graz</p>
+              </div>
+              <div class="contactinfo">
+                <img src="./assets/icons/phone-call.svg" alt="" class="cicon" />
+                <p>+43 666 666</p>
+              </div>
+              <div class="contactinfo">
+                <img src="./assets/icons/email.svg" alt="" class="cicon" />
+                <p>benjo@njobe.bjj</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
     <footer>
       <div class="social-links-container">
         <img src="./assets/icons/linkedin.png" alt="LinkedIn" />
@@ -116,7 +133,7 @@
         <img src="./assets/icons/instagram.png" alt="Instagram" />
       </div>
       <div class="logo">
-        <img src="./assets/images/benjamin-logo.png" alt="Creative logo" />
+        <img src="./assets/images/logos/benjamin-logo.png" alt="Creative logo" />
       </div>
     </footer>
   </body>

@@ -16,6 +16,21 @@ function openTab(evt, tab) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tab).style.display = "block";
+  document.getElementById(tab).style.display = "flex";
   evt.currentTarget.className += " active";
 }
+
+const blurDiv = document.querySelectorAll(".lp-projects-blur");
+const imagecontent = document.querySelectorAll(".lp-projects-image-content");
+
+imagecontent.forEach((item, index) => {
+  const bgImage = `../assets/images/project-images/${index + 1}.1.png`;
+  item.parentElement.style.backgroundImage = `url(${bgImage})`;
+  item.onmouseover = () => {
+    blurDiv.item(index).classList.add("blur-active");
+  };
+
+  item.onmouseout = () => {
+    blurDiv.item(index).classList.remove("blur-active");
+  };
+});
