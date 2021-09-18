@@ -30,6 +30,20 @@ body {
   border: #2e71be 3px solid;
 }
 
+.white-button {
+  background-color: #fff;
+  border: none;
+  color: #2e71be;
+  font-weight: bold;
+  border: #2e71be 3px solid;
+}
+.white-button:hover {
+  background-color: #2e71be;
+  color: #fff;
+  cursor: pointer;
+  border: #2e71be 3px solid;
+}
+
 button a {
   text-decoration: none;
   color: inherit;

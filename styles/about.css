@@ -3,9 +3,12 @@
   display: flex;
   flex-direction: column;
 }
+
+/* Bg styling*/
 .ab-bg-section > :first-child {
   position: relative;
 }
+
 .ab-bg-content {
   height: 29.5rem;
   background-repeat: no-repeat;
@@ -21,6 +24,7 @@
   font-size: 4.25rem;
 }
 
+/* Content styling tex and skills*/
 .ab-story-skills {
   display: flex;
   justify-content: space-between;
@@ -28,12 +32,25 @@
   align-self: center;
   margin-top: 10rem;
 }
-
+/* Common styling*/
 .ab-story,
 .ab-skills {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.ab-ss-title {
+  font: normal normal bold 2.5rem/3.75rem Poppins;
+  letter-spacing: 0px;
+  color: #2e71be;
+  margin: 0;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+/* Story */
+.ab-story {
+  width: 36%;
 }
 
 .ab-story-text {
@@ -43,44 +60,105 @@
   text-align: justify;
 }
 
-.ab-ss-title {
-  font: normal normal bold 2.5rem/3.75rem Poppins;
-  letter-spacing: 0px;
-  color: #2e71be;
-  margin: 0;
-  display: flex;
-  margin-bottom: 2rem;
-}
-.ab-story {
-  width: 36%;
-}
+/* Skills*/
+
+/* Outer container*/
 .ab-skills {
   width: 55%;
   justify-content: flex-start;
 }
-.ab-skills-skill{
+/* Skill bars container*/
+.ab-skills-skill {
   width: 100%;
 }
 
-.skill-description
-{
+.skill-container {
+  margin: 0 0 1rem 0;
+}
+
+.skill-description {
   display: flex;
   justify-content: space-between;
   margin: 0;
   width: 95%;
 }
-.skill-description > p{
+.skill-description > p {
+  text-align: left;
+  font: normal normal normal 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #393939;
   margin: 0 0 3px 0;
 }
 
-.skill-bar{
+.percentage-bubble {
+  position: relative;
+  background: #000;
+  border-radius: 0.4em;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+.percentage-bubble > p {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 0.75rem;
+  letter-spacing: 0px;
+}
+
+.percentage-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 0.25rem solid transparent;
+  border-top-color: #000;
+  border-bottom: 0;
+  margin-left: -0.25rem;
+  margin-bottom: -0.25rem;
+}
+
+.skill-bar {
   height: 1.25rem;
   width: 100%;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
-.progress
-{
+.progress {
   background-color: #2e71be;
   width: 95%;
   height: 100%;
+}
+
+.ab-skills-skill > :nth-child(2) .progress,
+.ab-skills-skill > :nth-child(3) .progress,
+.ab-skills-skill > :nth-child(2) .skill-description,
+.ab-skills-skill > :nth-child(3) .skill-description {
+  width: 90%;
+}
+
+.ab-skills-skill > :nth-child(4) .progress,
+.ab-skills-skill > :nth-child(4) .skill-description {
+  width: 85%;
+}
+.ab-skills-skill > :nth-last-child(2) .progress,
+.ab-skills-skill > :last-child .progress,
+.ab-skills-skill > :nth-last-child(2) .skill-description,
+.ab-skills-skill > :last-child .skill-description {
+  width: 80%;
+}
+
+.ab-skills-buttons {
+  display: flex;
+  margin-top: 4rem;
+}
+.ab-skills-buttons > button {
+  text-align: center;
+  font: normal normal 600 1.25rem/2rem Poppins;
+  letter-spacing: 0px;
+  width: 35%;
+  height: 3rem;
+}
+.ab-skills-buttons > :first-child {
+  margin-right: 3rem;
 }
