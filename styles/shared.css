@@ -61,3 +61,12 @@ button a {
   z-index: 1;
   margin: 0;
 }
+.bg-image-title{
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: #fff;
+  z-index: 3;
+  display: inline-flex;
+}

@@ -1,0 +1,86 @@
+.ab-bg-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ab-bg-section > :first-child {
+  position: relative;
+}
+.ab-bg-content {
+  height: 29.5rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url(../assets/images/bg/bg2.png);
+  display: flex;
+  align-items: flex-end;
+}
+
+.ab-bg-content > .bg-image-title {
+  margin: 0 0 2% 5%;
+  font-size: 4.25rem;
+}
+
+.ab-story-skills {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-self: center;
+  margin-top: 10rem;
+}
+
+.ab-story,
+.ab-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ab-story-text {
+  font: normal normal normal 1rem/1.5rem Poppins;
+  letter-spacing: 0px;
+  color: #393939;
+  text-align: justify;
+}
+
+.ab-ss-title {
+  font: normal normal bold 2.5rem/3.75rem Poppins;
+  letter-spacing: 0px;
+  color: #2e71be;
+  margin: 0;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.ab-story {
+  width: 36%;
+}
+.ab-skills {
+  width: 55%;
+  justify-content: flex-start;
+}
+.ab-skills-skill{
+  width: 100%;
+}
+
+.skill-description
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 95%;
+}
+.skill-description > p{
+  margin: 0 0 3px 0;
+}
+
+.skill-bar{
+  height: 1.25rem;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+.progress
+{
+  background-color: #2e71be;
+  width: 95%;
+  height: 100%;
+}
