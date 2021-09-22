@@ -1,36 +1,4 @@
-.ab-bg-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Bg styling*/
-  .ab-bg-section > :first-child {
-    position: relative;
-  }
-  
-  .ab-bg-content {
-    height: 29.5rem;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-image: url(../assets/images/bg/bg2.png);
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .ab-bg-content > .bg-image-title {
-    margin: 0 0 2% 5%;
-    font-size: 4.25rem;
-  }
 
-.ab-exp {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem;
-}
 
 .projects {
     display: flex;
@@ -94,7 +62,3 @@
     margin: 0;
 }
 
-.transparent-button-white-outline {
-    width: 16rem;
-    height: 4.5rem;
-}

@@ -1,8 +1,9 @@
 let path = window.location.pathname;
+path = path.substring(path.lastIndexOf("/"))
 let isProject = false
-
 let logoPathSmall = "./assets/images/logos/logo-white-simple.png"
 let logoPathBig = "./assets/images/logos/benjamin-logo.png"
+
 let selector = `a[href=".${path}"]`;
 if(path.startsWith("/projects"))
 {
