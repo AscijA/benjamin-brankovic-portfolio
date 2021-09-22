@@ -47,6 +47,7 @@
       </div>
     </nav>
     <script src="./scripts/navbar-styling.js"></script>
+
     <section class="contact-section">
   <!-- <div class="bg-image-blur"></div> -->    
       <div class="all">
@@ -54,11 +55,12 @@
           <div class="contactl">
             <div class="contactl-content">
               <h2 class="contactheader">Kontaktieren Sie mich</h2>
-              <form action="">
+              <form>
                 <div class="polje">
                   <input
                     type="text"
-                    name="name"
+                    id="Name"
+                    name="Name"
                     placeholder="Name*"
                     class="inputb"
                     maxlength="20"
@@ -66,18 +68,18 @@
                     required
                   />
                   <input
-                    type="email"
-                    name="name"
+                    type="email"    
+                    id="Email"        
+                    name="Email"
                     placeholder="E-Mail*"
                     class="inputb"
-                    maxlength="20"
+                    maxlength="30"
                     oninvalid="this.setCustomValidity('Bitte füllen Sie dieses Feld aus')"
                     required
                   />
                 </div>
                 <div>
                   <textarea
-                    class="inputb"
                     id="Message"
                     name="Message"
                     class="fcf-form-control"

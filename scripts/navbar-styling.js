@@ -3,15 +3,15 @@ let isProject = false
 
 let logoPathSmall = "./assets/images/logos/logo-white-simple.png"
 let logoPathBig = "./assets/images/logos/benjamin-logo.png"
+let selector = `a[href=".${path}"]`;
 if(path.startsWith("/projects"))
 {
   logoPathSmall = "../assets/images/logos/logo-white-simple.png"
   logoPathBig = "../assets/images/logos/benjamin-logo.png"
   path = "/portfolio.html"
-  
+  selector = `a[href="..${path}"]`;
 }
 
-let selector = `a[href="..${path}"]`;
 const matches = document.querySelectorAll(selector);
 
 const linkElement = matches.item(0);
