@@ -6,7 +6,7 @@ let logoPathBig = "./assets/images/logos/benjamin-logo.png";
 
 let selector;
 path = path.substring(path.lastIndexOf("/"));
-if (path.startsWith("/projects")) {
+if (path.startsWith("/project")) {
   logoPathSmall = "../assets/images/logos/logo-white-simple.png";
   logoPathBig = "../assets/images/logos/benjamin-logo.png";
   path = "/portfolio.html";
