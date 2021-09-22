@@ -24,8 +24,8 @@ const blurDiv = document.querySelectorAll(".lp-projects-blur");
 const imagecontent = document.querySelectorAll(".lp-projects-image-content");
 
 imagecontent.forEach((item, index) => {
-  // fix on github shit
-  const bgImage = `https://ascija.github.io/benjamin-brankovic-portfolio/assets/images/project-images/${
+ 
+  const bgImage = `/assets/images/project-images/${
     index + 1
   }.1.png`;
   item.parentElement.style.backgroundImage = `url(${bgImage})`;
