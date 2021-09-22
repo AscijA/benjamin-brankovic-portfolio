@@ -1,0 +1,72 @@
+.ab-bg-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Bg styling*/
+  .ab-bg-section > :first-child {
+    position: relative;
+  }
+  
+  .ab-bg-content {
+    height: 29.5rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url(../assets/images/bg/bg2.png);
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .ab-bg-content > .bg-image-title {
+    margin: 0 0 2% 5%;
+    font-size: 4.25rem;
+  }
+
+.ab-exp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.project-main{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 10rem;
+}
+
+.project-images > img{
+    width: 27rem;
+    height: 20rem;
+}
+
+.project-description {
+    max-width: 60rem;
+}
+
+.other-projects {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14rem;
+}
+
+.other-projects > a > img{
+    width: 26rem;
+    height: 20rem;
+}
+
+.other-projects-button {
+    display: flex;
+    justify-content: center;
+    margin: 4.5rem 0;
+}
+
+.blue-button {
+    width: 18rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
+}
