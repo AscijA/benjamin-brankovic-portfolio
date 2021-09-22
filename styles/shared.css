@@ -83,21 +83,23 @@ button a {
   z-index: 3;
   display: inline-flex;
 }
+
+
 /* Contact banner */
 .contact-banner {
-  background-color: #2e71be;
+  background-color: #2E71BE;
   color: white;
   padding: 2rem 0;
   margin-top: 6rem;
 }
 
-.banner-content {
+.banner-content{
   width: 60rem;
 }
 
 .banner-all {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
   align-items: center;
   margin: 0 5rem;
 }
@@ -106,7 +108,8 @@ button a {
   font-size: 1rem;
 }
 
-.banner-content > h1 {
+.banner-content > h1{
   font-size: 2.5rem;
   font-weight: 300;
 }
+
