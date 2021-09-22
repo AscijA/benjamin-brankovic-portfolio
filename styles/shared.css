@@ -30,6 +30,20 @@ body {
   border: #2e71be 3px solid;
 }
 
+.white-button {
+  background-color: #fff;
+  border: none;
+  color: #2e71be;
+  font-weight: bold;
+  border: #2e71be 3px solid;
+}
+.white-button:hover {
+  background-color: #2e71be;
+  color: #fff;
+  cursor: pointer;
+  border: #2e71be 3px solid;
+}
+
 button a {
   text-decoration: none;
   color: inherit;
@@ -60,4 +74,13 @@ button a {
   background-color: #000;
   z-index: 1;
   margin: 0;
+}
+.bg-image-title{
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: #fff;
+  z-index: 3;
+  display: inline-flex;
 }

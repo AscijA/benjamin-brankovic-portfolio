@@ -1,0 +1,284 @@
+.ab-bg-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bg styling*/
+.ab-bg-section > :first-child {
+  position: relative;
+}
+
+.ab-bg-content {
+  height: 29.5rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url(../assets/images/bg/bg2.png);
+  display: flex;
+  align-items: flex-end;
+}
+
+.ab-bg-content > .bg-image-title {
+  margin: 0 0 2% 5%;
+  font-size: 4.25rem;
+}
+
+/* Content styling tex and skills*/
+.ab-story-skills {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  align-self: center;
+  margin-top: 10rem;
+}
+/* Common styling*/
+.ab-story,
+.ab-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ab-ss-title {
+  font: normal normal bold 2.5rem/3.75rem Poppins;
+  letter-spacing: 0px;
+  color: #2e71be;
+  margin: 0;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+/* Story */
+.ab-story {
+  width: 36%;
+  justify-content: flex-start;
+}
+
+.ab-story-text {
+  font: normal normal normal 1rem/1.5rem Poppins;
+  letter-spacing: 0px;
+  color: #393939;
+  text-align: justify;
+}
+
+/* Skills*/
+
+/* Outer container*/
+.ab-skills {
+  width: 55%;
+  justify-content: flex-start;
+}
+/* Skill bars container*/
+.ab-skills-skill {
+  width: 100%;
+}
+
+.skill-container {
+  margin: 0 0 1rem 0;
+}
+
+.skill-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 95%;
+}
+.skill-description > p {
+  text-align: left;
+  font: normal normal normal 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #393939;
+  margin: 0 0 3px 0;
+}
+
+.percentage-bubble {
+  position: relative;
+  background: #000;
+  border-radius: 0.4em;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+.percentage-bubble > p {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 0.75rem;
+  letter-spacing: 0px;
+}
+
+.percentage-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 0.25rem solid transparent;
+  border-top-color: #000;
+  border-bottom: 0;
+  margin-left: -0.25rem;
+  margin-bottom: -0.25rem;
+}
+
+.skill-bar {
+  height: 1.25rem;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+.progress {
+  background-color: #2e71be;
+  width: 95%;
+  height: 100%;
+}
+
+.ab-skills-skill > :nth-child(2) .progress,
+.ab-skills-skill > :nth-child(3) .progress,
+.ab-skills-skill > :nth-child(2) .skill-description,
+.ab-skills-skill > :nth-child(3) .skill-description {
+  width: 90%;
+}
+
+.ab-skills-skill > :nth-child(4) .progress,
+.ab-skills-skill > :nth-child(4) .skill-description {
+  width: 85%;
+}
+.ab-skills-skill > :nth-last-child(2) .progress,
+.ab-skills-skill > :last-child .progress,
+.ab-skills-skill > :nth-last-child(2) .skill-description,
+.ab-skills-skill > :last-child .skill-description {
+  width: 80%;
+}
+
+.ab-skills-buttons {
+  display: flex;
+  margin-top: 4rem;
+}
+.ab-skills-buttons > button {
+  text-align: center;
+  font: normal normal 600 1.25rem/2rem Poppins;
+  letter-spacing: 0px;
+  width: 35%;
+  height: 3rem;
+}
+.ab-skills-buttons > :first-child {
+  margin-right: 3rem;
+}
+
+/* Work Experience and stome eduation section styling*/
+.ab-exp,
+.ab-edu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.ab-exp-content {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: flex-start;
+}
+.ab-exp-content > :first-child {
+  margin-bottom: 4rem;
+}
+.ab-exp-content > :last-child {
+  margin-top: 4rem;
+}
+
+.ab-exp-item {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid #373737;
+}
+.ab-exp-item:last-child {
+  border-bottom: none;
+}
+.ab-exp-item * {
+  margin: 0;
+  margin-bottom: 4rem;
+}
+.ab-exp-item p {
+  letter-spacing: 0px;
+  color: #414141;
+}
+.date-cont {
+  justify-self: flex-start;
+  width: 26%;
+}
+
+.exp-date {
+  font: normal normal 500 1.5rem/2rem Poppins;
+}
+
+.ab-exp-item-position {
+  width: 26%;
+  margin: 0 2rem;
+}
+.exp-pos {
+  font: normal normal 600 2rem/2rem Poppins;
+  margin-bottom: 1rem;
+}
+.exp-employer {
+  font: normal normal 600 1rem/1rem Poppins;
+}
+
+.exp-description {
+  font: normal normal normal 1rem/1.2rem Poppins;
+  text-align: justify;
+  width: 48%;
+}
+
+/* Education*/
+.ab-edu {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.ab-edu-content {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: flex-start;
+}
+.ab-edu-content > * {
+  margin-bottom: 4rem;
+}
+.ab-edu-item {
+  display: flex;
+  justify-content: flex-end;
+}
+.ab-edu-item * {
+  margin: 0;
+}
+.ab-edu-item p {
+  letter-spacing: 0px;
+  color: #414141;
+}
+.ab-edu-item-position {
+  width: 35%;
+  justify-self: flex-start;
+  margin-right: 5rem;
+}
+.ab-edu-item-position > :first-child {
+  margin-bottom: 1rem;
+}
+.edu-studium {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.studium {
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+  font: normal normal 600 1.5rem/1.5rem Poppins;
+  letter-spacing: 0px;
+  color: #414141;
+}
+.edu-description {
+  margin-top: 1.5rem;
+  font: normal normal normal 1rem/1.2rem Poppins;
+  text-align: justify;
+}
