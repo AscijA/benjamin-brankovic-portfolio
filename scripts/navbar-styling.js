@@ -1,18 +1,17 @@
 let path = window.location.pathname;
-path = path.substring(path.lastIndexOf("/"))
-let isProject = false
-let logoPathSmall = "./assets/images/logos/logo-white-simple.png"
-let logoPathBig = "./assets/images/logos/benjamin-logo.png"
+
+let isProject = false;
+let logoPathSmall = "./assets/images/logos/logo-white-simple.png";
+let logoPathBig = "./assets/images/logos/benjamin-logo.png";
 
 let selector = `a[href=".${path}"]`;
-if(path.startsWith("/projects"))
-{
-  logoPathSmall = "../assets/images/logos/logo-white-simple.png"
-  logoPathBig = "../assets/images/logos/benjamin-logo.png"
-  path = "/portfolio.html"
+if (path.startsWith("/projects")) {
+  logoPathSmall = "../assets/images/logos/logo-white-simple.png";
+  logoPathBig = "../assets/images/logos/benjamin-logo.png";
+  path = "/portfolio.html";
   selector = `a[href="..${path}"]`;
 }
-
+path = path.substring(path.lastIndexOf("/"));
 const matches = document.querySelectorAll(selector);
 
 const linkElement = matches.item(0);
@@ -25,7 +24,7 @@ const navbarBehaviourHandler = () => {
   if (window.scrollY > 0) {
     navbar.classList.add("navbar-items-scroll");
     logo.setAttribute("src", logoPathSmall);
-    logo.setAttribute("id","navbar-logo-scroll")
+    logo.setAttribute("id", "navbar-logo-scroll");
   } else {
     navbar.classList.remove("navbar-items-scroll");
     logo.setAttribute("src", logoPathBig);
