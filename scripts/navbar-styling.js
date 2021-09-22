@@ -18,8 +18,6 @@ if (path.startsWith("/project")) {
 const matches = document.querySelectorAll(selector);
 
 const linkElement = matches.item(0);
-console.log(path);
-console.log(selector);
 linkElement.classList.add("navbar-active");
 
 const navbar = document.querySelector(".navbar-items");
