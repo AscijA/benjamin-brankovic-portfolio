@@ -6,17 +6,20 @@ let logoPathBig = "./assets/images/logos/benjamin-logo.png";
 
 let selector;
 path = path.substring(path.lastIndexOf("/"));
+
 if (path.startsWith("/project")) {
   logoPathSmall = "../assets/images/logos/logo-white-simple.png";
   logoPathBig = "../assets/images/logos/benjamin-logo.png";
   path = "/portfolio.html";
   selector = `a[href="..${path}"]`;
+} else {
+  selector = `a[href=".${path}"]`;
 }
-selector = `a[href=".${path}"]`;
 const matches = document.querySelectorAll(selector);
 
 const linkElement = matches.item(0);
-
+console.log(path);
+console.log(selector);
 linkElement.classList.add("navbar-active");
 
 const navbar = document.querySelector(".navbar-items");
