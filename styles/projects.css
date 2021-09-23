@@ -49,8 +49,6 @@
 }
 
 .other-projects {
-    display: flex;
-    justify-content: space-evenly;
     margin-top: 14rem;
 }
 
@@ -69,4 +67,14 @@
     width: 18rem;
     height: 4.5rem;
     font-size: 1.5rem;
+}
+.p2 {
+  background-image: url(../assets/images/project-images/2.1.png);
+}
+
+.p3 {
+  background-image: url(../assets/images/project-images/3.1.png);
+}
+.p4 {
+  background-image: url(../assets/images/project-images/4.1.png);
 }
