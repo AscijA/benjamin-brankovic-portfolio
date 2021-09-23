@@ -154,6 +154,9 @@
 
 .lp-about-me > div > div {
   margin-left: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
 }
 .lp-about-me > div > div > p {
   color: #545454;
@@ -185,6 +188,7 @@
   width: 15rem;
   margin-top: 2rem;
   font-size: 1rem;
+  justify-self: flex-end;
 }
 
 /*Landing Page Projects*/
@@ -246,12 +250,14 @@
 }
 
 .lp-projects-image-content {
-  margin: 1rem 2rem;
+  margin: 0.5rem;
   height: 100%;
   width: 100%;
   opacity: 0;
   z-index: 2;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .lp-projects-image-content > p {
@@ -271,6 +277,8 @@
   color: #545454;
   background-color: #fff;
   border-radius: 15px;
+  justify-self: flex-end;
+  margin-top: auto;
 }
 
 .lp-projects-image-content:hover {
@@ -281,6 +289,9 @@
   margin: 1rem 0;
 }
 
+.lp-projects-tabcontent > a {
+  text-decoration: none;
+}
 .lp-projects > button {
   width: 19rem;
   height: 4rem;
