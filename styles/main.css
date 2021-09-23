@@ -22,13 +22,6 @@
   font-weight: 200;
   font-size: 2.5rem;
 }
-.lp-landing-screen-bg-image > :last-child {
-  letter-spacing: 0px;
-  text-align: left;
-  font-weight: bold;
-  font-size: 4.5rem;
-}
-
 
 /*Landing page top contact banner*/
 .lp-top-contact {
@@ -161,6 +154,9 @@
 
 .lp-about-me > div > div {
   margin-left: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
 }
 .lp-about-me > div > div > p {
   color: #545454;
@@ -192,110 +188,10 @@
   width: 15rem;
   margin-top: 2rem;
   font-size: 1rem;
+  justify-self: flex-end;
 }
 
-/*Landing Page Projects*/
-.lp-projects {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.lp-projects-tabs {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.lp-projects-tab {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
 
-.lp-projects-tab button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  height: 2.5rem;
-  min-width: 6rem;
-  border-radius: 15px;
-  font-size: 1.5rem;
-  color: #545454;
-}
-
-.lp-projects-tab button.active,
-.lp-projects-tab button:hover {
-  color: #fff;
-  background-color: #2e71be;
-}
-
-/* Style the tab content */
-.lp-projects-tabcontent {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.lp-projects-tabcontent > div {
-  margin: 1rem 0;
-  width: 350px;
-  height: 200px;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.lp-projects-image-content {
-  margin: 1rem 2rem;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  z-index: 2;
-  color: #fff;
-}
-
-.lp-projects-image-content > p {
-  margin: 0 0 1rem 0;
-  text-align: left;
-  font: normal normal normal 0.75rem/1.1 Poppins;
-  letter-spacing: 0px;
-  color: #ffffff;
-}
-.lp-projects-image-content > h3 {
-  margin: 0 0 1rem 0;
-  letter-spacing: 0px;
-}
-.lp-projects-image-content .tag {
-  width: max-content;
-  padding: 0.3rem;
-  color: #545454;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.lp-projects-image-content:hover {
-  opacity: 1;
-}
-
-.lp-projects-tabcontent > img {
-  margin: 1rem 0;
-}
-
-.lp-projects > button {
-  width: 19rem;
-  height: 4rem;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 500;
-  margin: 4rem 0 8rem 0;
-}
 /* Landing Page Bottom Contact Banner*/
 .lp-bottom-contact {
   width: 100%;
@@ -334,7 +230,6 @@
 }
 .lp-bottom-contact > .buttons-container > button > p {
   text-align: center;
-  
 }
 
 .lp-bottom-contact > .buttons-container > :nth-child(1) {
@@ -343,4 +238,9 @@
 
 .lp-bottom-contact > .buttons-container > :nth-child(2) {
   margin-left: 2rem;
+}
+
+.k {
+  width: 100%;
+  height: 100%;
 }

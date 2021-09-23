@@ -45,7 +45,9 @@
   width: 15rem;
   height: auto;
 }
-
+.logo-link {
+  margin: 0 3.6%;
+}
 .navbar a {
   color: #fff;
   font-size: 1.5rem;
