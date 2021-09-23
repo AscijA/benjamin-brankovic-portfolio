@@ -17,7 +17,7 @@ if (path.startsWith("/project")) {
 }
 const matches = document.querySelectorAll(selector);
 
-const linkElement = matches.item(0);
+const linkElement = selector.includes("landing") ? matches.item(1) :matches.item(0);
 linkElement.classList.add("navbar-active");
 
 const navbar = document.querySelector(".navbar-items");
