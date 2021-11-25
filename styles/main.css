@@ -1,9 +1,20 @@
+html{
+  scroll-behavior: smooth;
+  scroll-margin-top: 10rem;
+  overflow-y: scroll;
+}
+
+.scroll-offset {
+  padding-top: 6rem;
+	margin-top: -6rem;
+}
+
 /* Landing Page Landing Screen*/
 .lp-landing-screen-bg-image {
   background-image: url(../assets/images/bg/bg1-right-size.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 67.5rem;
+  height: 69.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +36,7 @@
 
 /*Landing page top contact banner*/
 .lp-top-contact {
-  height: 16.5rem;
+  height: 12.5rem;
   width: 100%;
   background-color: #2e71be;
   display: flex;
@@ -50,8 +61,8 @@
 .lp-top-contact > div > h1 {
   text-align: left;
   font-weight: bold;
-  font-size: 2.8rem;
-  line-height: 2.8rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   margin: 0;
 }
 .lp-top-contact > div > p {
@@ -63,11 +74,11 @@
 }
 
 .lp-top-contact > .buttons-container > button {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  height: 5.6rem;
-  width: 26.6rem;
+  height: 3.6rem;
+  width: 13.6rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -77,68 +88,14 @@
 }
 
 /* Landing Page services*/
-.lp-services {
-  width: 100%;
-  height: 27.25rem;
-  background-color: #e8e8e8;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.lp-services > div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 3rem;
-}
-.lp-services > div > div {
-  height: 22rem;
-  width: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-.lp-services > div > div > img {
-  border-radius: 50%;
-}
-.lp-services > div > div > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.lp-services > div > div > div > span {
-  text-align: center;
-  align-self: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2e71be;
-  letter-spacing: 0.88px;
-}
-.lp-services-item-precka {
-  height: 0.5rem;
-  background-color: #2e71be;
-  width: 7.25rem;
-  align-self: center;
-  margin-top: 0.5rem;
-}
-.lp-services > div > div > div > p {
-  text-align: center;
-}
-.lp-services > .blue-button {
-  width: 14rem;
-  height: 3.25rem;
-  align-self: center;
-  margin: 0;
-  justify-self: flex-end;
-  margin-bottom: -1.6125rem;
-  font-size: 1.5rem;
-}
-.lp-services > .blue-button > p {
-  margin: 0;
-}
+
+
 
 /* Landing Page about me*/
+
+#profilepic {
+  width: 20rem;
+}
 
 .lp-about-me {
   display: flex;
@@ -196,7 +153,7 @@
 .lp-bottom-contact {
   width: 100%;
   background-color: #2e71be;
-  height: 28rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   align-items: center;

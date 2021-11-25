@@ -11,7 +11,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:flex-end;
 }
 
 .navbar-items-scroll {
@@ -28,7 +28,7 @@
   margin-right: 7.3%;
   list-style: none;
   display: flex;
-  width: 57%;
+  width: 40%;
   height: 100%;
   justify-content: space-between;
   align-items: center;

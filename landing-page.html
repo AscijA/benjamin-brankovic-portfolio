@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/tabs.css" />
 
     <link rel="stylesheet" href="./styles/shared.css" />
     <link rel="stylesheet" href="./styles/nav-footer.css" />
@@ -35,14 +36,10 @@
           <li>
             <a href="./landing-page.html" class="navbar-inactive">START</a>
           </li>
-          <li><a href="./about.html" class="navbar-inactive">ÜBER MICH</a></li>
+          <li><a href="#tabs" class="navbar-inactive">DIENSTLEISTUNGEN</a></li>
+          <li><a href="#about" class="navbar-inactive">ÜBER MICH</a></li>
           <li>
-            <a href="./portfolio.html" class="navbar-inactive">PORTFOLIO</a>
-          </li>
-          <li>
-            <a href="./services.html" class="navbar-inactive"
-              >DIENSTLEISTUNGEN</a
-            >
+            <a href="#portfolio" class="navbar-inactive">PORTFOLIO</a>
           </li>
           <li><a href="./kontakt.html" class="navbar-inactive">KONTAKT</a></li>
         </ul>
@@ -57,7 +54,7 @@
         <h1 class="bg-image-title">Benjamin<br />Branković</h1>
       </div>
     </section>
-    <section class="lp-top-contact">
+    <section class="lp-top-contact" id="services">
       <div>
         <h1>FÜHREN SIE IHR PROJKET MIT EXPERTEN DURCH</h1>
         <p>
@@ -73,62 +70,55 @@
       </div>
     </section>
 
-    <section class="lp-services">
-      <div>
-        <div>
-          <img src="https://via.placeholder.com/183" alt="placeholder" />
-          <div>
-            <span>PROJEKTOVANJE</span>
-            <div class="lp-services-item-precka"></div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
-              dignissimos earum reprehenderit aliquid, corrupti qui officiis.
-            </p>
-          </div>
-        </div>
+		<div class="site-wrapper scroll-offset" id="tabs">
+			<section class="tabs-wrapper">
+				<div class="tabs-container">
+					<div class="tabs-block">
+						<div id="tabs-section" class="tabs">
+							<ul class="tab-head">
+                <li>
+                  <h2 id="dienst">DIENSTLEISTUNGEN</h2>
+                </li>
+                <li>
+									<a href="#tab-1" class="tab-link active"> <span class="tab-label">BIM</span></a>
+								</li>
+								<li>
+									<a href="#tab-2" class="tab-link"><span class="tab-label">Ausführungsplanung</span></a>
+								</li>
+							</ul>
 
-        <div>
-          <img src="https://via.placeholder.com/183" alt="placeholder" />
-          <div>
-            <span>PROJEKTOVANJE</span>
-            <div class="lp-services-item-precka"></div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
-              dignissimos earum reprehenderit aliquid, corrupti qui officiis.
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/183" alt="placeholder" />
-          <div>
-            <span>PROJEKTOVANJE</span>
-            <div class="lp-services-item-precka"></div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
-              dignissimos earum reprehenderit aliquid, corrupti qui officiis.
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/183" alt="placeholder" />
-          <div>
-            <span>PROJEKTOVANJE</span>
-            <div class="lp-services-item-precka"></div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
-              dignissimos earum reprehenderit aliquid, corrupti qui officiis.
-            </p>
-          </div>
-        </div>
-      </div>
-      <button class="blue-button">
-        <p><a href="./services.html">MEHR</a></p>
-      </button>
-    </section>
-    <section class="lp-about-me">
+							<section id="tab-1" class="tab-body entry-content active active-content">
+								<h2>BIM</h2>
+                <ul>
+                  <li>3D-Modelle (Allplan, Revit, .IFC)</li>
+                  <li>Integrale Planung</li>
+                  <li>Digitale, virtuelle Gebäudeschnitte und Grundrisse</li>
+                  <li>Besondere BIM-Leistungen <br><i>(für Bauwerksentwurf und Bauwerksplanung)</i></i></li>
+                  <li>Massenermittlungen anhand 3D-Modell</li>
+                  <li>Zuarbeit zu Modell-Kollisionsberichten (.BCF, .CML, IFC, …)</li>
+                </ul>
+							</section>
+
+							<section id="tab-2" class="tab-body entry-content">
+								<h2>Ausführungsplanung</h2>
+                <ul>
+                  <li>Schalungspläne</li>
+                  <li>Bewehrungspläne</li>
+                  <li>Stahlbau Pläne</li>
+                  <li>Holzbau Pläne</li>
+                </ul>
+              </section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+    <section class="lp-about-me scroll-offset" id="about">
       <h1 class="section-title">ÜBER MICH</h1>
       <div>
-        <img src="https://via.placeholder.com/400x450" alt="Das bin ich" />
+        <img src="./assets/images/benjo.jpg" alt="Das bin ich" id="profilepic"/>
         <div>
           <p>
             Benjamin Branković ist ein Freelance-Engineer spezialisiert auf
@@ -163,7 +153,7 @@
       </div>
     </section>
 
-    <section class="lp-projects">
+    <section class="lp-projects scroll-offset" id="portfolio">
       <h1 class="section-title">MEINE PROJEKTE</h1>
       <div class="lp-projects-tabs">
         <div class="lp-projects-tab">
@@ -491,6 +481,9 @@
         </button>
       </div>
     </section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="./scripts/tabs.js"></script>
 
     <footer>
       <div class="social-links-container">
