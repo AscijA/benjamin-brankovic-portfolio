@@ -64,7 +64,7 @@
 }
 
 .tabs > ul li a:hover:not(.active) {
-	color: #2e71be;
+	color: #b8b8b8;
 }
 
 .tabs > ul li a > span {
@@ -119,7 +119,7 @@
 
 
 .tabs > ul {
-	width: 30rem;
+	width: 65rem;
 	height: 100%;
 }
 

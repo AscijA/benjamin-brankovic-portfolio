@@ -34,3 +34,4 @@ const navbarBehaviourHandler = () => {
   }
 };
 window.addEventListener("scroll", navbarBehaviourHandler);
+
