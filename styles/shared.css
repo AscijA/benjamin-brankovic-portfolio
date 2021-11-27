@@ -94,7 +94,7 @@ button a {
   letter-spacing: 0px;
   text-align: left;
   font-weight: bold;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: #fff;
   z-index: 3;
   display: inline-flex;
@@ -128,9 +128,9 @@ button a {
   font-weight: 300;
 }
 
-.banner-all > .transparent-button-white-outline {
-  width: 16rem;
-  height: 4.5rem;
+.transparent-button-white-outline {
+  width: 15rem;
+  height: 3rem;
 }
 .ab-bg-section {
   width: 100%;
@@ -155,7 +155,6 @@ button a {
 
 .ab-bg-content > .bg-image-title {
   margin: 0 0 2% 5%;
-  font-size: 4.25rem;
 }
 
 .ab-exp {
