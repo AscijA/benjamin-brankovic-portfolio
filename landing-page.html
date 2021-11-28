@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/tabs.css" />
 
+    <link rel="stylesheet" href="./styles/imghover.css" />
     <link rel="stylesheet" href="./styles/shared.css" />
     <link rel="stylesheet" href="./styles/nav-footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -120,7 +121,7 @@
       <div>
         <img src="./assets/images/benjo.jpg" alt="Das bin ich" id="profilepic"/>
         <div>
-          <div>
+          <div class="about-description">
             <p>Benjamin Branković ist ein Freelance-Engineer spezialisiert auf konstruktiven Ingenieurbau.</p>
             <p>Als Bauingeneiur qualitativ hochwertige und effiziente Arbeit liefern zu können, habe ich mich auf das Erstellen von Schalungs- und Bewehrung­splänen für Zivilingenieure und Baumeister spezialisiert.</p> 
             <p>Als CAD-System verwende ich Allplan und arbeite wenn möglich mit einem vollständigen 3D Workflow, wobei das 3D Schalungs­modell von mir in Allplan erstellt wird, oder wenn bereits ein 3D Modell vorliegt, hat sich in der Praxis auch der Import von 3D Modellen aus Revit und AutoCAD bewährt.</p>
@@ -136,308 +137,122 @@
     <section class="lp-projects scroll-offset" id="portfolio">
       <h1 class="section-title">MEINE PROJEKTE</h1>
       <div class="lp-projects-tabs">
-        <div class="lp-projects-tab">
-          <button
-            class="lp-projects-tablinks"
-            id="defaultOpen"
-            onclick="openTab(event, 'jedan')"
-          >
-            Alle
-          </button>
-          <button class="lp-projects-tablinks" onclick="openTab(event, 'dva')">
-            Nesto
-          </button>
-          <button class="lp-projects-tablinks" onclick="openTab(event, 'tri')">
-            Jos Nesto
-          </button>
-        </div>
+
        
         <div id="jedan" class="lp-projects-tabcontent">
-          <a href="./projects/project1.html">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Brücke Erneuerung - Fertigteil Bauwerk</h3>
-                <p>
-                  Ort: Bautzen-Bad Schandau, Deutschland <br />
-                  Aufgabe: BIM Model, Schalungspläne <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
+          <div class="container">
+            <div class="content">
+              <a href="#" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./assets/images/project-images/1.1.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Brücke Erneuerung - Fertigteil Bauwerk</h3>
+                  <p class="content-text">
+                    Ort: Bautzen-Bad Schandau, Deutschland <br/>
+                    Aufgabe: BIM Model, Schalungspläne <br/>
+                    Firma : KHP Leipzig mbH</p>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="./projects/project2.html">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Brücke Erneuerung, Stützmuauer und Treppen Neubau</h3>
-                <p>
-                  Ort: Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
+          </div>
+          <div class="container">
+            <div class="content">
+              <a href="#" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./assets/images/project-images/2.1.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Brücke Erneuerung, Stützmuauer und <br> Treppen Neubau</h3>
+                  <p class="content-text">
+                    Ort: Berlin, Deutschland <br/>
+                    Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
+                    Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
+                    Baugrubenplan <br/>
+                    Firma : KHP Leipzig mbH
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="./projects/project3.html">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Frazniskaner Kloster Liftschacht Sanierung/Neubau</h3>
-                <p>
-                  Ort: Salzburg, Österreich <br />
-                  Aufgabe: BIM Model, Schalungs- und Bewehrungspläne <br />
-                  Firma : Brünner ZT GmbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
+          </div>
+          <div class="container">
+            <div class="content">
+              <a href="#" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./assets/images/project-images/3.1.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Frazniskaner Kloster Liftschacht Sanierung/Neubau</h3>
+                  <p class="content-text">
+                    Ort: Salzburg, Österreich <br />
+                    Aufgabe: BIM Model, Schalungs- und Bewehrungspläne <br />
+                    Firma : Brünner ZT GmbH
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="./projects/project4.html">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>ÖBB Querschlagwand Fertigteile - Prüfstand</h3>
-                <p>
-                  Ort: - <br />
-                  Aufgabe: BIM Model, Schalungsplan <br />
-                  Firma: Brünner ZT GmbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
+          </div>
+          <div class="container">
+            <div class="content">
+              <a href="#" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./assets/images/project-images/4.1.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">ÖBB Querschlagwand Fertigteile - Prüfstand</h3>
+                  <p class="content-text">
+                    Ort: - <br />
+                    Aufgabe: BIM Model, Schalungsplan <br />
+                    Firma: Brünner ZT GmbH
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="./projects/project5.html">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Schneider Hause 2 und 3 OG Neubau</h3>
-                <p>
-                  Ort: Graz, Österreich<br />
-                  Aufgabe: BIM Model, Bewehrungspläne <br />
-                  Firma: Brünner ZT GmbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
+          </div>
+          <div class="container">
+            <div class="content">
+              <a href="#" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./assets/images/project-images/5.1.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Schneider Hause 2 und 3 OG Neubau</h3>
+                  <p class="content-text">
+                    Ort: Graz, Österreich<br />
+                    Aufgabe: BIM Model, Bewehrungspläne <br />
+                    Firma: Brünner ZT GmbH
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="./projects/project6.html">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Gratwein Geh-und Radweg, Stützmauer Neubau</h3>
-                <p>
+          </div>
+          <div class="container">
+            <div class="content">
+              <a href="#" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./assets/images/project-images/6.1.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Gratwein Geh-und Radweg, Stützmauer Neubau</h3>
+                  <p class="content-text">
                   Ort: Gratwein, Österreich <br />
                   Aufgabe: Einreichplanung, Ausschreibungsplanung, BIM Model,
                   Schalungs-und Bewehrungspläne <br />
                   Firma: Brünner ZT GmbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
+          <div class="container">
+            <div class="content">
+              <a href="#" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./assets/images/project-images/7.1.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Vagiazit Moschee Dachkonstruktion Erneuerung</h3>
+                  <p class="content-text">
+                    Ort: Didymoticho, Griechenland <br />
+                    Aufgabe: Neue Dachkonstruktion Berechnung, Anschlusse
+                    Bemessung und BIM Model <br />
+                    Firma: TU Graz, Institut für Holzbau und Holztechnologie
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-
-        <div id="dva" class="lp-projects-tabcontent">
-          <a href="./projects/project7.html">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Vagiazit Moschee Dachkonstruktion Erneuerung</h3>
-                <p>
-                  Ort: Didymoticho, Griechenland <br />
-                  Aufgabe: Neue Dachkonstruktion Berechnung, Anschlusse
-                  Bemessung und BIM Model <br />
-                  Firma: TU Graz, Institut für Holzbau und Holztechnologie
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div id="tri" class="lp-projects-tabcontent">
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <div class="lp-projects-blur"></div>
-              <div class="lp-projects-image-content">
-                <h3>Projekt 2</h3>
-                <p>
-                  Ort : Berlin, Deutschland <br />
-                  Aufgabe: 3D Bewehrung, Schalungs-und Bewehrungspläne,
-                  Entwässerungsplan, Geländeübersichtsplan, Absteckplan,
-                  Baugrubenplan <br />
-                  Firma : KHP Leipzig mbH
-                </p>
-                <p class="tag">Niskogradnja</p>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
+      
 
       <button class="blue-button">
         <a href="./portfolio.html">DAS GANZE PORTFOLIO</a>

@@ -5,8 +5,8 @@ html{
 }
 
 .scroll-offset {
-  padding-top: 6rem;
-	margin-top: -6rem;
+  padding-top: 7rem;
+	margin-top: -7rem;
 }
 
 /* Landing Page Landing Screen*/
@@ -148,6 +148,9 @@ html{
   justify-self: flex-end;
 }
 
+.about-description{
+  min-width: 20rem;
+}
 
 /* Landing Page Bottom Contact Banner*/
 .lp-bottom-contact {
