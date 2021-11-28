@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="shortcut icon"
+    href="../assets/icons/favicon.png"
+    type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <link rel="stylesheet" href="../styles/nav-footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <title>Portfolio | Benjamin Brankovic</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-items">
+          <a href="../landing-page.html" class="logo-link">
+            <img
+              src="../assets/images/logos/logo-white-simple.png"
+              alt="Creative logo"
+              id="navbar-logo"
+              style="  margin: 2rem 3.6%;
+              width: 15rem;
+              height: auto;"
+            />
+          </a>
+          <ul>
+            <li>
+              <a href="../landing-page.html" class="navbar-inactive">START</a>
+            </li>
+            <li><a href="../about.html" class="navbar-inactive">ÜBER MICH</a></li>
+            <li>
+              <a href="../portfolio.html" class="navbar-inactive">PORTFOLIO</a>
+            </li>
+            <li><a href="../kontakt.html" class="navbar-inactive">KONTAKT</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 1</div>
+                <img src="../assets/images/project-images/5.1.png" style="width:100%">
+            </div>
+          
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption">                 
+
+                  <strong>Ort: </strong>Graz, Österreich
+              </p>
+              <p>
+                  <strong>Aufgabe: </strong>BIM Model, Bewehrungspläne
+              </p>
+              <p>
+                  <strong>Firma: </strong>Brünner ZT GmbH
+              </p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="../assets/images/project-images/5.1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+              </div>
+            </div>
+          </div>
+        </section>
+<!-- Container for the image gallery -->
+
+
+
+  <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+
+    <footer>
+        <div class="social-links-container">
+          <a
+            href="https://www.linkedin.com/in/benjamin-branković-60581a170"
+            target="_blank"
+            ><img src="../assets/icons/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100013742712514"
+            target="_blank"
+            ><img src="../assets/icons/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/beggiebego/" target="_blank"
+            ><img src="../assets/icons/instagram.png" alt="Instagram"
+          /></a>
+        </div>
+        <div class="logo">
+          <a href=""
+            ><img
+              src="../assets/images/logos/benjamin-logo.png"
+              alt="Creative logo"
+          /></a>
+        </div>
+      </footer>
+
+</body>
+</html>

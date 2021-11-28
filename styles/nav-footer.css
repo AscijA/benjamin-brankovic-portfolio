@@ -28,7 +28,7 @@
   margin-right: 7.3%;
   list-style: none;
   display: flex;
-  width: 40%;
+  width: 45%;
   height: 100%;
   justify-content: space-between;
   align-items: center;
@@ -108,4 +108,19 @@ footer {
 
 .social-links-container :nth-child(2) {
   margin: 0 1rem;
+}
+
+@media (max-width: 1824px){
+  .navbar-items > ul{
+    width: 55%;
+  }
+  ul > li > a{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  ul > li > a{
+    font-size: 1rem;
+  }
 }

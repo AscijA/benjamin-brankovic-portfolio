@@ -52,7 +52,8 @@
           <div class="contactl">
             <div class="contactl-content">
               <h2 class="contactheader">Kontaktieren Sie mich</h2>
-              <form method="post" action="contact-form.php">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
                 <div class="polje">
                   <input
                     type="text"
@@ -64,7 +65,7 @@
                     required
                   />
                   <input
-                    type="text"           
+                    type="email"           
                     name="email"
                     placeholder="E-Mail*"
                     class="inputb"
@@ -75,7 +76,7 @@
                 </div>
                 <div>
                   <textarea
-                    name="message"
+                    name="text"
                     rows="6"
                     maxlength="3000"
                     placeholder="Text*"
