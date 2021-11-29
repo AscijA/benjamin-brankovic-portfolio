@@ -9,22 +9,25 @@
 
 .project{
     display: flex;
-    justify-content:start;
+    justify-content:center;
     gap: 12rem;
+    flex-wrap: wrap;
+    
 }
 
 .pdescription{
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 50rem;
-    height: 20rem;
+    max-width: 50rem;
+    max-height: 20rem;
+    margin-left: 1rem;
 }
 
-.pimage > img{
-    width: 27rem;
-    height: 20rem;
+.pimage > a > img{
+    max-width: 27rem;
+    max-height: 20rem;
 }
 
 .pheader {display: flex;}
@@ -63,5 +66,34 @@
 }
 
 .ptext{
-    margin-top: 3rem;
+    margin-top: 2rem;
+    max-width: 80%;
 }
+
+@media screen and (max-width: 1200px) {
+    .pimage > a > img {
+        max-width: 25rem;
+        max-height: 18rem;
+    }
+
+    .pdescription {
+        justify-content: center;
+    }
+
+    .project{
+        gap: 3rem;
+    }
+
+    .ptext{
+        margin-left: 1rem;
+    }
+
+    button{
+        margin: 1rem;
+    }
+
+    .pdescription{
+        max-width: 40rem;
+    }
+}
+

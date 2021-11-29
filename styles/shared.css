@@ -272,3 +272,32 @@ button a {
   font-weight: 500;
   margin: 4rem 0 4rem 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .transparent-button-white-outline {
+    font-size: 0.8rem !important;
+    width: 12rem !important;
+  }
+
+  .ab-bg-content {
+    height: 15rem;
+  }
+
+  .ab-bg-content > h1 {
+    font-size: 2rem;
+  }
+
+  .banner-all{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .banner-content > h1 {
+    font-size: 1.3rem;
+  }
+
+  .banner-content > p {
+    font-size: 0.8rem;
+  }
+}

@@ -25,13 +25,14 @@ body {
     display: flex;
     width: 75%;
     margin: 8rem 0 5rem 0; 
+    justify-content: center;
 }
 
 .contactl{
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    width: 120rem;
+    max-width: 120rem;
 }
 
 .contactr{
@@ -40,6 +41,7 @@ body {
     justify-content: center;
     background-color: #2e71be;
     color: white;
+    max-width: 25rem;
 }
 
 .contactr-content{
@@ -48,9 +50,7 @@ body {
 }
 
 .contactl-content {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
+    margin: 3rem;
 }
 
 .contactheader {
@@ -80,7 +80,7 @@ textarea {
     min-height: 10rem;
     border: none;
     border-bottom: solid 2px #444444;
-    width: 42rem;
+    max-width: 42rem;
 }
 
 textarea:focus {
@@ -130,7 +130,7 @@ textarea:hover{
 .inputb {
     border: none;
     border-bottom: solid 2px #444444;
-    width: 20rem;
+    max-width: 20rem;
     font-size: 1.5rem;
 }
 
@@ -164,3 +164,53 @@ footer {
     position: fixed;
     bottom: 0;
   }
+
+@media screen and (max-width: 1025px) {
+    .contact{
+        flex-wrap: wrap;
+    }
+
+    .polje {
+        margin: 0 1rem;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
+    textarea{
+        margin: 0 1rem;
+    }
+
+    .contactl-content {
+        margin-left: 2rem;
+    }
+
+    .contactl {
+        width: 100%;
+    }
+
+    .contactr {
+        max-width: 100%;
+    }
+
+    textarea, .polje{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contactheader{
+        margin: 1rem;
+    }
+
+    .inputb, textarea{
+        font-size: 0.7rem;
+    }
+
+    .contactl-content > h2{
+        font-size: 1.2rem;
+    }
+
+    .inputb{
+        min-width: 12rem;
+    }
+}

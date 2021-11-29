@@ -43,7 +43,7 @@
 #navbar-logo-scroll {
   margin: 2rem 3.6%;
   width: 15rem;
-  height: auto;
+  height: auto !important;
 }
 .logo-link {
   margin: 0 3.6%;
@@ -110,17 +110,30 @@ footer {
   margin: 0 1rem;
 }
 
-@media (max-width: 1824px){
+@media screen and (max-width: 1824px){
   .navbar-items > ul{
     width: 55%;
   }
-  ul > li > a{
+  .navbar-items > ul > li > a{
     font-size: 1rem;
   }
 }
 
-@media (max-width: 1600px) {
-  ul > li > a{
+@media screen and (max-width: 1200px){
+  .navbar-items > ul > li > a{
     font-size: 1rem;
+  }
+  .navbar-items > a > img {
+    height: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 450px){
+  footer > .social-links-container > a > img{
+    height: 0.8rem !important;
+  }
+
+  .logo > a > img {
+    height: 2rem;
   }
 }

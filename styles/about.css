@@ -257,3 +257,39 @@
   font: normal normal normal 1rem/1.2rem Poppins;
   text-align: justify;
 }
+
+
+
+@media screen and (max-width: 780px) {
+  .ab-skills{
+    display: none;
+  }
+
+  .ab-story {
+    width: auto;
+  }
+
+  button {
+    margin: 1rem !important;
+  }
+
+  .banner-content > h1 {
+    font-size: 1.3rem;
+  }
+
+  .banner-content > p {
+    font-size: 0.8rem;
+  }
+
+  .ab-bg-content {
+    height: 15rem;
+  }
+
+  .ab-bg-content > h1 {
+    font-size: 2rem;
+  }
+
+  .ab-story-skills{
+    margin-top: 4rem;
+  }
+}

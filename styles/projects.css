@@ -191,9 +191,15 @@ img {
 }
 
 footer {
+  position: fixed;
   bottom: 0;
 }
 
 .mySlides{
   justify-content: center;
+}
+
+.navbar-items > a > img {
+  margin: 1rem 3.6%;
+  height: 4vh !important;
 }

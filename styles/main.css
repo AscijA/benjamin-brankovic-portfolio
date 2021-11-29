@@ -14,7 +14,8 @@ html{
   background-image: url(../assets/images/bg/bg1-right-size.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 69.5rem;
+  min-height: 45rem;
+  max-height: 69.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,15 +193,132 @@ html{
   text-align: center;
 }
 
-.lp-bottom-contact > .buttons-container > :nth-child(1) {
-  margin-right: 2rem;
-}
-
-.lp-bottom-contact > .buttons-container > :nth-child(2) {
-  margin-left: 2rem;
-}
-
 .k {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1200px){
+  .tabs > ul {
+    width: 45% !important;
+  }
+  .tabs section {
+    padding-left: 1rem !important;
+  }
+  .lp-about-me > div > div {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .lp-top-contact > div > h1 {
+    font-size: 1.3rem;
+  }
+  .lp-top-contact > div > p {
+    font-size: 0.8rem;
+  }
+  .lp-top-contact > .buttons-container > button {
+    font-size: 0.8rem;
+    height: auto;
+    width: 12rem;
+  }
+  .tabs > ul {
+    width: 35% !important;
+  }
+
+  .tab-label {
+    font-size: 1rem;
+  }
+
+  .tabs section {
+    font-size: 1rem !important;
+  }
+
+  .lp-about-me > div > div {
+    margin-left: 3rem;
+  }
+
+  #about-buttons > button {
+    margin: 2rem 1rem 0 0 !important;
+  }
+
+  #profilepic {
+    width: 15rem;
+  }
+
+  .lp-projects-tabs {
+    width: 90% !important;
+  }
+
+  .lp-bottom-contact > h1 {
+    font-size: 1.3rem;
+  }
+
+  .lp-bottom-contact > p {
+    font-size: 0.8rem;
+  }
+
+  .lp-bottom-contact {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .lp-top-contact > :first-child{
+    margin-left: 2rem;
+  }
+
+  #dienst {
+    font-size: 1rem;
+  }
+
+  .about-description {
+    min-width: 15rem;
+  }
+
+  .lp-about-me > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #about-buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .lp-top-contact > div > h1{
+    font-size: 0.9rem;
+  }
+
+  .lp-top-contact > div > p{
+    font-size: 0.8rem;
+  }
+
+  .lp-top-contact > :first-child, .lp-top-contact > :last-child {
+    margin: 1rem;
+  }
+
+  #dienst{
+    font-size: 0.8rem;
+  }
+
+  .tabs section {
+    border-bottom: none !important;
+  }
+
+  .buttons-container{
+    display: flex;
+    margin: 1rem;
+  }
+
+  .buttons-container > button {
+    margin: 
+    0.4rem;
+  }
+
+  .lp-landing-screen-bg-image > :nth-child(2) {
+    font-size: 1.2rem;
+  }
+
 }
