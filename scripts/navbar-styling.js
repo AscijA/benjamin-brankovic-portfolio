@@ -17,7 +17,9 @@ if (path.startsWith("/project")) {
 }
 const matches = document.querySelectorAll(selector);
 
-const linkElement = selector.includes("landing") ? matches.item(1) :matches.item(0);
+const linkElement = selector.includes("landing")
+  ? matches.item(1)
+  : matches.item(0);
 linkElement.classList.add("navbar-active");
 
 const navbar = document.querySelector(".navbar-items");
@@ -35,3 +37,14 @@ const navbarBehaviourHandler = () => {
 };
 window.addEventListener("scroll", navbarBehaviourHandler);
 
+const menuBtn = document.querySelector(".menu-btn");
+let menuOpen = false;
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
