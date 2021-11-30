@@ -14,7 +14,7 @@ html{
   background-image: url(../assets/images/bg/bg1-right-size.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 45rem;
+  height: 85vh;
   max-height: 69.5rem;
   display: flex;
   flex-direction: column;
@@ -188,6 +188,7 @@ html{
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 .lp-bottom-contact > .buttons-container > button > p {
   text-align: center;
@@ -318,7 +319,17 @@ html{
   }
 
   .lp-landing-screen-bg-image > :nth-child(2) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
+
+  .lp-landing-screen-bg-image {
+    height: 80vh;
+  }
+
+  .bg-image-title{
+    font-size: 2rem !important;
+  }
+
+ 
 
 }
