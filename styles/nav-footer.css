@@ -110,7 +110,7 @@ footer {
   margin: 0 1rem;
 }
 
-@media screen and (max-width: 1824px) {
+@media screen and (max-width: 1024px) {
   .navbar-items > ul {
     width: 55%;
   }
@@ -121,7 +121,7 @@ footer {
 
 .menu-btn {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 80px;
@@ -183,4 +183,21 @@ footer {
   .logo > a > img {
     height: 2rem;
   }
+}
+
+@media all and (max-width: 1025px) {
+  .menu-btn {
+    display: flex;
+    width: 100%;
+  }
+
+  .navbar .main-nav {
+    display: none;
+  }
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column  ;
+  list-style: none;
 }
