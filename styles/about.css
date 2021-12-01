@@ -6,6 +6,8 @@
   width: 75%;
   align-self: center;
   margin-top: 10rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* Common styling*/
 .ab-story,
@@ -26,6 +28,7 @@
 /* Story */
 .ab-story {
   width: 36%;
+  min-width: 30rem;
   justify-content: flex-start;
 }
 
@@ -34,6 +37,7 @@
   letter-spacing: 0px;
   color: #393939;
   text-align: justify;
+
 }
 
 /* Skills*/
