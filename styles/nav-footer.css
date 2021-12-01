@@ -89,6 +89,27 @@ footer {
   margin-left: -3rem;
 }
 
+.fusion {
+  display: flex;
+  align-items: center;
+}
+
+.fusion > p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.fusion > p > a {
+  text-decoration: none;
+  color: white;
+}
+
+#fusion-logo {
+  width: 1.5rem;
+  height: 1.4rem;
+  margin-left: 0.2rem;
+}
+
 .logo img {
   height: 3rem;
   justify-self: center;
