@@ -124,13 +124,9 @@ html{
   margin: 0;
 }
 .lp-about-me > div > img {
-  box-shadow: -1rem -1rem #2e71be;
-}
-.lp-about-me-circle {
-  width: 1.25rem;
-  height: 1.25rem;
+
   background-color: #2e71be;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 .nezz-sta-ide-ovdje {
   margin-top: 1rem;
@@ -238,7 +234,7 @@ html{
   }
 
   .lp-about-me > div > div {
-    margin-left: 3rem;
+    margin-left: 0;
   }
 
   #about-buttons > button {
@@ -268,6 +264,10 @@ html{
   .lp-bottom-contact > .buttons-container > button {
     margin: 1rem 0.7rem 1rem;
   }
+
+  .logo {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -290,6 +290,11 @@ html{
 
   #about-buttons {
     justify-content: center;
+  }
+
+  .lp-top-contact {
+    height: auto;
+    padding: 1rem 0;
   }
 }
 
