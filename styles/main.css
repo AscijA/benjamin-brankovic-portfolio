@@ -88,6 +88,8 @@ html{
   text-align: center;
 }
 
+
+
 /* Landing Page services*/
 
 
@@ -259,8 +261,12 @@ html{
     font-size: 0.8rem;
   }
 
-  .lp-bottom-contact {
-    height: 15rem;
+  .lp-top-contact > div > p {
+    display: none;
+  }
+
+  .lp-bottom-contact > .buttons-container > button {
+    margin: 1rem 0.7rem 1rem;
   }
 }
 

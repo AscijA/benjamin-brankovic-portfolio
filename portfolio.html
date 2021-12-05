@@ -10,10 +10,9 @@
     type="image/x-icon"
     />
     <link rel="stylesheet" href="./styles/main.css" />
-
+    <link rel="stylesheet" href="./styles/newnav.css">
     <link rel="stylesheet" href="./styles/gallery.css">
     <link rel="stylesheet" href="./styles/shared.css" />
-    <link rel="stylesheet" href="./styles/nav-footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./styles/portfolio.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,29 +24,64 @@
     <title>Portfolio | Benjamin Brankovic</title>
 </head>
 <body>
-     <nav class="navbar">
-      <div class="navbar-items">
-        <a href="./landing-page.html" class="logo-link">
-          <img
-            src="./assets/images/logos/benjamin-logo.png"
-            alt="Creative logo"
-            id="navbar-logo"
-          />
-        </a>
-        <ul>
-          <li>
-            <a href="./landing-page.html" class="navbar-inactive">START</a>
-          </li>
-          <li><a href="./about.html" class="navbar-inactive">ÜBER MICH</a></li>
-          <li>
-            <a href="./portfolio.html" class="navbar-inactive">PORTFOLIO</a>
-          </li>
-          <li><a href="./kontakt.html" class="navbar-inactive">KONTAKT</a></li>
-        </ul>
+
+    <div class="page-wrapper">
+        <header class="main-header">
+          <a href="#" class="menu-toggle"><i class="fa fa-bars" aria-hidden="true">
+            <div class="container" onclick="this.classList.toggle('active')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 200 200">
+                    <g stroke-width="6.5" stroke-linecap="round">
+                      <path
+                        d="M72 82.286h28.75"
+                        fill="#009100"
+                        fill-rule="evenodd"
+                        stroke="#fff"
+                      />
+                      <path
+                        d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                        fill="none"
+                        stroke="#fff"
+                      />
+                      <path
+                        d="M72 125.143h28.75"
+                        fill="#009100"
+                        fill-rule="evenodd"
+                        stroke="#fff"
+                      />
+                      <path
+                        d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                        fill="none"
+                        stroke="#fff"
+                      />
+                      <path
+                        d="M100.75 82.286h28.75"
+                        fill="#009100"
+                        fill-rule="evenodd"
+                        stroke="#fff"
+                      />
+                      <path
+                        d="M100.75 125.143h28.75"
+                        fill="#009100"
+                        fill-rule="evenodd"
+                        stroke="#fff"
+                      />
+                    </g>
+                  </svg>
+            </div>
+          </i></a>
+        </header>
       </div>
-    </nav>
-      <script src="./scripts/navbar-styling.js"></script>
-  
+      
+      <!-- Side Menu -->
+      <nav class="side-menu">
+        <ul>
+            <li><a class="item" href="./landing-page.html">START</a></li>
+            <li><a class="item" href="./about.html">ÜBER MICH</a></li>
+            <li><a class="item" href="./portfolio.html">PORTFOLIO</a></li>
+            <li><a class="item" href="./kontakt.html">KONTAKT</a></li>
+          </ul>
+      </nav>
+
       <section class="ab-bg-section">
       <div>
         <div class="bg-image-blur"></div>
@@ -158,7 +192,7 @@
             <div class="pimage">
                 <a href="./projects/project5.html"><img src="./assets/images/project-images/5.1.png" alt=""></a>
             </div>
-            <div class="pdescription">
+            <div class="pdescription" id="glupost">
                 <div class="pheader">
                     <h2>Schneider Hause 2 und 3 OG Neubau</h2>
                 </div>
@@ -230,7 +264,7 @@
             <div class="banner-content">
                 <h1>LOS GEHT'S!</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo non felis in consectetur.
+                    Kontaktieren Sie mich, damit wir über Ihre Projekte im Detail diskutieren können.
                 </p>
             </div>
             <button class="transparent-button-white-outline">
@@ -241,6 +275,8 @@
             </button>
         </div>
     </section>
+
+    <script src="./scripts/newnav.js"></script>
 
     <footer>
         <div class="social-links-container">

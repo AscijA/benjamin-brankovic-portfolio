@@ -40,6 +40,10 @@
 
 }
 
+#glupost {
+    max-width: 45rem !important; 
+  }
+
 .pheader > p {
     background: #545454 0% 0% no-repeat padding-box;
     color: white;

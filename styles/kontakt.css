@@ -49,6 +49,11 @@ body {
     margin-bottom: 5rem;
 }
 
+.basicinfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contactl-content {
     margin: 3rem;
 }
@@ -121,6 +126,7 @@ textarea:hover{
 
 .contactinfo{
     display: flex;
+    min-width: 10rem;
 }
 
 .contactinfo > p{
@@ -194,6 +200,10 @@ footer {
 
     textarea, .polje{
         margin: 0;
+    }
+
+    .all {
+        margin-top: 1rem;
     }
 }
 

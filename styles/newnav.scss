@@ -1,0 +1,76 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #323232;
+  overflow-x:hidden;
+  height: 100%;
+  margin: 0;
+}
+
+ul { list-style: none; margin: 0; padding: 0; }
+a { color: #323232; text-decoration: none; }
+
+// Variables 
+
+$transition: .3s;
+$side-menu-width: 260px;
+
+
+// Default state styles (menu is hidden)
+
+.page-wrapper {
+  position: relative;
+  transition: $transition;
+  padding: 10px 25px;
+}
+
+.menu-toggle {
+  /* NS */
+}
+
+.side-menu {
+  color: white;
+  background-color: #333;
+  padding: 15px 25px;
+  overflow-y: auto; // scroll shows when needed
+
+  // positions the menu on reveal
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  height: 100%;
+  width: $side-menu-width;
+  
+  
+  transform: translate3d(-100%, 0, 0); // hides menu
+  transition: $transition;
+  
+  .item {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid rgba(#fff, .15);
+    transition: $transition;
+  
+    &:hover {
+      background-color: white;
+      color: #333;
+    }
+  }
+}
+
+
+// Show state styles (menu is showing)
+.menu-active {  
+  .page-wrapper {
+    // moves page to right
+    transform: translate3d($side-menu-width, 0, 0);
+  }
+  
+  .side-menu {
+    // moves menu to right, revealing it
+    transform: translate3d(0,0,0);
+  }  
+}
