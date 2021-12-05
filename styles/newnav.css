@@ -244,4 +244,12 @@ footer {
   footer {
     flex-wrap: wrap;
   }
+
+  .fusion > p {
+    display: none;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font-size: 0.8rem;
+  }
 }

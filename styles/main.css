@@ -300,7 +300,7 @@ html{
 
 @media screen and (max-width: 450px) {
   .lp-top-contact > div > h1{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .lp-top-contact > div > p{
@@ -308,7 +308,11 @@ html{
   }
 
   .lp-top-contact > :first-child, .lp-top-contact > :last-child {
-    margin: 1rem;
+    margin: 0.5rem;
+  }
+
+  .lp-top-contact > .buttons-container > button {
+    width: 10rem !important;
   }
 
   #dienst{
@@ -319,9 +323,22 @@ html{
     border-bottom: none !important;
   }
 
+  #tabs-section > section > h2 {
+    font-size: 1rem;
+  }
+
+  #tabs-section > section > ul {
+    font-size: 0.8rem;
+  }
   .buttons-container{
     display: flex;
     margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tabs > ul li a > span.tab-label{
+    font-size: 0.8rem;
   }
 
   .buttons-container > button {

@@ -223,4 +223,10 @@ footer {
     .inputb{
         min-width: 12rem;
     }
+
+    .contactr-content > p, .contactinfo > p {
+        font-size: 0.8rem;
+    }
+
+
 }
